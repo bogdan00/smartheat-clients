@@ -54,9 +54,11 @@ class SalusApi {
             };
 
             this._logger.debug(`Logged on (${this._device.devId}, ${this._token.userId}, ${this._token.secToken})`);
+            return true
         } catch (error) {
             this._logger.debug('Error occurred:');
             this._logger.debug(error);
+            return false
         }
     }
 

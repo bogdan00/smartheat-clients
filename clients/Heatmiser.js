@@ -8,10 +8,12 @@ class Heatmiser {
 
     async login() {
         this._logger.debug('Logging in...');
+        return true
     }
 
     async logout() {
         this._logger.debug('Logging out...');
+        return true
     }
 
     async online() {

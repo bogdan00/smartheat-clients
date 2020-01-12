@@ -48,9 +48,11 @@ class Salus {
             this._devId = $('input[name="devId"]').val();
             this._token = $('#token').val();
             this._logger.debug(`Logged on (${this._devId}, ${this._token})`);
+            return true
         } catch (error) {
             this._logger.debug('Error occurred:');
             this._logger.debug(error);
+            return false
         }
     }
 

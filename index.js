@@ -1,7 +1,7 @@
 const SmartHeat = {
     clients: {
-        Factory: require('./clients/Factory'),
         Salus: require('./clients/Salus'),
+        SalusApi: require('./clients/SalusApi'),
         Mock: require('./clients/Mock')
     }
 };
